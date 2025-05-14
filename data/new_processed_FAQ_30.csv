@@ -1,0 +1,92 @@
+Question,Answer
+I forgot my password,"To reset your password, click Forgot Password? on the Think Agent Sign-In screen, then complete the below fields: User Name: USERID and Email ID: USER ACCOUNT EMAIL
+"
+What does invalid user mean,"If you are receiving an error that states Invalid User then you either are not registered with Think Agent and/or are using the wrong login credentials. Please make sure that you are using your Think Agent specific username listed 
+"
+My registration links expired; can you send me new ones?,please contact think agent customer support support@thinkagent.com 
+Why am I not seeing enrollments in Think Agent?,"The My Enrollments screen is blank as you have not yet initiated an enrollment in Think Agent. Once you have saved, sent-for-eSignature, or submitted an enrollment from Think Agent, My Enrollments will display the enrollment(s). 
+In addition, if you have SAVED and not submitted the enrollment it will not display. Please also check your Draft and Awaiting Signature folders. 
+"
+Why does Think Agent show Im not Ready-to-sell,"There are a few reasons that may have caused this discrepancy today: 
+The NPN you provided is not correct. Please check the NPN you provided and reply only if incorrect. 
+Your RTS status with Aetna was recently updated/ new. It can take 1-2 business days to flow to all Aetna reporting. Please allow for this timing & reply. 
+You are a strategic partner with Aetna. Our strategic partners are to request accounts through a single point-of-contact & file. Reply if you are strategic for details. 
+If none of the above apply to you, please contact our Broker Services Department (BSD) at 1-866-714-9301 or BrokerSupport@Aetna.com to confirm you are contracted and RTS with Aetna. You may be missing an attestation or step to becoming RTS. Think Agent cannot make you RTS - We rely on daily BSD reporting. 
+"
+How do I change my email address,"To change your account email, we have deleted the previous account and recreated your account today using the new email address provided."
+Where is my HRA Payment,"Think Agent is the tool for which the HRA is processed only, we do not have insight into payments issued and/or payment status. Please contact Aetnas BSD at 1-866-714-9301 orBrokerSupport@Aetna.com."
+My client is not receiving the application that I am sending via Send for Signature,"If the send-for-eSignature email is not reaching your customer, please see the below steps: 
+Verify the client email is correct in My Enrollments 
+If Yes  Resend the enrollment from My Enrollments 
+If No  Click Resend in My Enrollments, then choose Change Email 
+Confirm the client has checked spam, junk and deleted items for emails from communication@email.thinkagent.com at their email address 
+If still not found, you have alternate enrollment options available to you: 
+Choose an alternate client email to send a new application 
+Provide the client with your PURL (Personalized URL) 
+Enroll face-to-face with the Sign & Submit signature option 
+Enroll with CARE (instructions attached) 
+Enroll with a paper application (outside of Think Agent). 
+"
+"I am trying to sign in and it says I have an account, but I dont remember my username","It appears you have a Think Agent account and have completed your registration. You no longer need to Sign Up or use your Registration PIN. 
+To login, please open the application  Using this desktop address: https://app.thinkagent.com - choose Sign In and enter your credentials. 
+Username: USERID 
+"
+"I keep getting a 401 error, what can I do","To alleviate this issue, you may need to clear your cache & cookies as outlined below. 
+Please log out and back in to refresh this page. 
+Please exit Think Agent and close all Chrome tabs 
+Delete your saved Chrome link for Think Agent (if you have one) 
+Open a new Chrome tab (should be the only open Chrome tab) 
+Clear your cache (or press CTRL + SHIFT + DELETE) in Google Chrome - Clear for All time (see image below) 
+Then access our desktop site using this new link in Google Chrome - https://app.thinkagent.com 
+Log-in & test if this issue is still occurring 
+"
+How do I download Think Agent for my desktop,"The Think Agent website can be found at https://app.thinkagent.com for use on your desktop & laptop. 
+To save Think Agent as an icon & address on your desktop, please click the Install Think Agent icon in the upper right corner of your screen, on the web address bar 
+"
+I cant check-in for my retail event,"If this occurs again, exit the mobile app and stop it from running. Then try again to log-in and check-in to your event.
+Then a few useful tips to help with future Retail event check-inBe at the event location.
+Check-in during the event or up to 30-minutes before the event start time.
+"
+How do I shorten my PURL,"If you would like to shorten your PURL, please email support@thinkagent.com"
+How do I change the effective date on my application?,Think Agent is not able to edit your enrollments. If you submitted an application with a request effective date you did not intend to choose you must submit a new application.
+What does my client do when I send an application via Send for Signature,"When you choose Send for eSignature the customer receives an email from this address: communication@email.thinkagent.com as well as a verification code via email from the same sender (2 emails total).
+The customer should open the first email apply their verification code from their 2nd email, and review the completed application. They cannot make edits.
+After review, the customer will be presented with the final page where they type their name as their signature and submit the enrollment  When they do you will receive an email notice.
+"
+How do I record a call with Think Agent,You can record a call by going into your Leads and selecting a lead. Once the lead is selected you will see a green phone icon. Click on the icon to start the call! You can play the TPMO disclaimer at any point during the call.
+Why cant my client hear me on a CARE call,"In order to begin a CARE call successfully, you must confirm each of the below. If you reply, please indicate which of the below you have verifiedYour speaker volume is up & microphone access is on (or Allowed in device settings for Think Agent mobile app)
+You are logged-in to Think Agent on your desktop or mobile device
+You are calling/ 3-way conferencing in the correct phone number  1-844-978-4465
+Hint: Instead of 3-way conferencing, try our outbound call option using the green phone icon in your clients lead!
+Wait for the prompt to finish before entering your NPN, and pressing # key
+See the CARE call pop-up on your Think Agent screen & accept the call. Telephone icon appears in upper right
+Note: If 3-way conferencing/ merging calls, once you accept the call on your desktop, mute your desktop speakers or there may be echo/ feedback.
+Please see the attached training or CARE video linked below for more details. https://storage.googleapis.com/thinkagentresource/Telephonic%20Enrollment%20Script/CAREv3.mp4
+"
+Where can I learn more about Think Agent,If youd like to learn more about Think Agent you can access trainings and other materials in your Resources tab within Think Agent.
+How do I schedule a retail event within Think Agent,"Retail events can be requested 18 days in the future in Think Agent. 
+To request a Retail event, access your calendar, select your preferred day and click the + sign. You will be presented with the Retail Icon. Select the icon to advance to the next screen. 
+Next, enter a zip code and adjust miles if applicable. 
+Select your location and enter Start and Ed times, then click submit. 
+"
+How do I start the HRA,"After completing an Aetna MA/ MAPD enrollment from Think Agent - if your client agrees - you will have the opportunity to start the HRA from Think Agent. Important to know, there are two versions of the HRA - HMO/PPO and D-SNP, some plans excluded. Based upon the plan you enrolled, you will have access to the corresponding HRA. The HRA can be completed in Think Agent after completing an enrollment by any of the below methods only. The ""Start HRA"" button is available in Think Agent for the enrollment day + the next calendar day after the application has been submitted to Aetna (cannot be pending member or agent signature). Button will be available face-to-face and  telephonic enrollment signature method immediately upon submission of this enrollment. In case HRA not initiated immediately after submission, you should navigate to ""My enrollments"" page, select an enrollment - ""Start HRA"" button will be available on ""Enrollment Details"" page.  For ""Send for e-Signature"" option button will be available after member sign an enrollment application. For eKit- the HRA can be completed after a member submits their eKit enrollment"
+What if I cancel or exit the HRA,"You may begin a new HRA from your My Enrollments page if the window of opportunity not passed since the application was submitted. Navigate to ""My enrollments"" page, select an enrollment - ""Start HRA"" button will be available on ""Enrollment Details"" page. You will have the remainder of the enrollment day + the next day to begin the HRA."
+How can I sign up for a Think Agent Training,Live and local trainings can be found at www.aetnamedicareagenttraining.com
+How do I send a scope of appointment,"To send an SOA from Think Agent click on the Sales tile 
+Create your contact under Leads 
+Select Create SOA to complete the short form 
+Send via email or text for their signature 
+"
+How do I create an eKit,"Choose create eKit from your lead 
+Choose a plan to send to your customer by email 
+"
+How do I enroll through Think Agent,"Click the Sales tile 
+Then click Enroll 
+Create your lead before shopping for plans in your leads geography 
+Click Enroll Now to start the enrollment process! 
+"
+Can I use Think Agent on a mobile device,"Yes! You can download the Think Agent app in the Apple App Store for Apple devices. For Android devices, the app can be found on the Google Play store."
+Where can I see all the applications Ive submitted,You can see the status of all applications including those submitted outside of Think Agent in Producer World.
+What are HRA payment rules,"HRA payment amount depends on the product type (MA or D-SNP) and also depend on the below factors, and all must be true:1. Enrollment into an Aetna Medicare MA, MAPD or D-SNP plan (some plans excluded). PDP plans are not eligible for the HRA. 2.The HRA must be completed. You will have the remainder of the enrollment day + the next day to begin the HRA. 3. The enrollment must be a new (to Aetna) sale - Not plan changes. 4. The HRA cannot be completed after submitting a paper application. 5. The HRA must be started within the allowed time following enrollment submission. 6. Think Agent cannot re-open the HRA opportunity for any enrollment. For questions regarding these rules, please contactHRAProgramServices@aetna.com."
+What is the Health Risk Assessment (HRA),"TheHealth Risk Assessment (HRA)is an evaluation completed by the agent with the beneficiary post-enrollment into a participating Aetna MA/ MAPD plan, including D-SNP. The assessment is designed to capture the member's current health-related details so that Aetna can better understand, coordinate & provide the appropriate resources to support the member on their health journey."
+Why my HRA has not been paid,There might be multiple reasons for HRA not being paid. Here are some of them : 1. HRA is too new and has not been processed by our systems. 2. HRA does not satisfy payment rules. 3. Your enrollment has not been confirmed yet. 4. You might not be AOR for submitted enrollment. Please contactHRAProgramServices@aetna.comfor additional questions.
