@@ -7,6 +7,7 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_core.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 from transformers import pipeline,AutoTokenizer,AutoModelForCausalLM
 import torch
+
 import uuid
 import pandas as pd
 from pymongo import MongoClient
@@ -103,20 +104,17 @@ class Chatbot:
         combine_docs_chain = create_stuff_documents_chain(self.llm, self.prompt)
         retrieval_chain = create_retrieval_chain(self.retriever, combine_docs_chain)
         return retrieval_chain
-
-    def serialize_aimessagechunk(self,chunk):
-        """
-        Custom serializer for AIMessageChunk objects.
-        Convert the AIMessageChunk object to a serializable format.
-        """
+    
+    def serialize_aimessagechunk(self, chunk):
         if isinstance(chunk, AIMessageChunk):
             return chunk.content
-        elif isinstance(chunk,str):
+        elif isinstance(chunk, str):
             return chunk
+        elif isinstance(chunk, dict):
+            return chunk.get("content", "")
         else:
-            raise TypeError(
-                f"Object of type {type(chunk).__name__} is not correctly formatted for serialization"
-            )
+            raise TypeError(f"Unsupported chunk type: {type(chunk)}")
+
     def save_responses(self,query,response,response_time):
         context=self.retriever.get_relevant_documents(query)
         metadata={
@@ -138,45 +136,15 @@ class Chatbot:
         new_df.to_csv(save_path,index=False)
         print("result is saved too {}".format(save_path))
     
-    def generate_response(self,query):
-        full_res=""
-        start=time.time()
-        for chunk in self.chain.stream({"input":query}):
-            print(chunk)
-            yield chunk
-
-        end=time.time()-start
-        self.messages.append({"role":"assistant","content":full_res})
-        self.save_responses(query,full_res,end)
-
-    # async def generate_response(self,query):
-    #     if self.chain is None:
-    #         self.get_retrieval_chain()
-    #     self.messages.append({"role":"user","content":query})
-    #     print("Executing query:",query)
-    #     async for event in self.chain.astream_events(input={"question":query}, version="v1"):
-    #         start=time.time()
-    #         full_response=""
-    #         print("Event:",event["event"])
-    #         if event["event"] == 'on_llm_stream' or event["event"]=="on_chain_stream":
-    #             print(event)
-    #             chunk_content = self.serialize_aimessagechunk(event["data"]["chunk"])
-    #             chunk_content_html = chunk_content.replace("\n", "<br>")
-    #             full_response+=chunk_content_html
-    #             print(chunk_content_html)
-    #             yield f"{chunk_content_html}"
-
-    #         if event["event"]=="on_llm_end":
-    #             end=time.time()-start
-    #             print("appending the results and saving the responses")
-    #             self.messages.append({"role":"assistant","content":full_response})
-    #             self.save_responses(query,full_response,end)
-        
-
-# chat_bot=Chatbot()
-# async def main(query):
-#     async for chunk in chat_bot.generate_response(query):
-#         print(chunk)
-# import asyncio            
-# if __name__=="main":
-#     asyncio.run(main(query="what is hra"))
+    def generate_response(self, query):
+        print("called generate response")
+        full_res = ""
+        start = time.time()
+        for chunk in self.chain.stream({"input": query}):
+            chunk_text = self.serialize_aimessagechunk(chunk)
+            full_res += chunk_text
+            
+            yield f"data: {chunk_text}\n\n"
+        end = time.time() - start
+        self.messages.append({"role": "assistant", "content": full_res})
+        self.save_responses(query, full_res, end)
