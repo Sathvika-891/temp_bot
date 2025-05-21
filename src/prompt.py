@@ -1,5 +1,4 @@
-from langchain_core.prompts import ChatPromptTemplate
-
+from langchain_core.prompts import PromptTemplate
 def get_prompt():
     template = """
     Craft a response for a virtual assistant representing Think Agent's Medicare Sales Chatbot.
@@ -10,9 +9,8 @@ def get_prompt():
     Do not make up answer just answer from the context below
     {context}
 
-    Question: {question}
+    Question: {input}
 
     """
-    prompt = ChatPromptTemplate.from_template(template)
-
+    prompt = PromptTemplate.from_template(template)
     return prompt
