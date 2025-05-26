@@ -115,6 +115,9 @@ class Chatbot:
         self.chain.memory.chat_memory.messages=messages
         full_res=""
         start=time.time()
+        # for c in "hello":
+        #     full_res+=c
+        #     yield c
         for chunk in self.chain.stream(query):
             chunk_text = self.serialize_aimessagechunk(chunk)
             full_res += chunk_text
