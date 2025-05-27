@@ -25,9 +25,9 @@ class ChatDB:
                     for msg in stored_messages:
                         role = msg.get("role")
                         content = msg.get("content")
-                        if role == "human":
+                        if role == "user":
                             reconstructed.append(HumanMessage(content=content))
-                        elif role == "ai":
+                        elif role == "assistant":
                             reconstructed.append(AIMessage(content=content))
                         # Optionally handle other roles if used
                     return reconstructed
@@ -72,7 +72,7 @@ class ChatDB:
                 self.collection.update_one(
                     {"user_id": user_id, "sessions.session_id": session_id},
                     {
-                        "$push": {"sessions.$.messages": formatted_messages[-1]},
+                        "$push": {"sessions.$.messages": {"$each": formatted_messages}},
                         "$set": {"sessions.$.updated_at": now}
                     }
                 )
