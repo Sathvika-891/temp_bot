@@ -115,13 +115,13 @@ class Chatbot:
         self.chain.memory.chat_memory.messages=messages
         full_res=""
         start=time.time()
-        # for c in "hello":
-        #     full_res+=c
-        #     yield c
-        for chunk in self.chain.stream(query):
-            chunk_text = self.serialize_aimessagechunk(chunk)
-            full_res += chunk_text
-            yield chunk
+        for c in "hello":
+            full_res+=c
+            yield c
+        # for chunk in self.chain.stream(query):
+        #     chunk_text = self.serialize_aimessagechunk(chunk)
+        #     full_res += chunk_text
+        #     yield chunk
         end = time.time() - start
         messages.append(AIMessage(full_res))
-        self.chat_db.save_messages(user_id=uid, session_id=sid, messages=messages)
+        self.chat_db.save_messages(user_id=uid, session_id=sid, messages=[HumanMessage(query),AIMessage(full_res)])
